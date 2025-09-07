@@ -11,7 +11,9 @@ const navLinks = [
 
 function Logo() {
   return (
-    <div className='flex items-center gap-5 font-bold text-emerald-600'>
+    <div
+      className='flex items-center gap-5 font-semibold w-[160px] h-[30px] text-[#54BD95]'
+    >
       <span className='text-5xl'>Biccas</span>
     </div>
   )

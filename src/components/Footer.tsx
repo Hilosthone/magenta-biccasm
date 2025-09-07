@@ -1,10 +1,15 @@
 import { Play } from "react-iconly";
+import Vector from './logos/Vector.png'
+import ellipse54 from './logos/ellipse54.jpg'
+import ellipse55 from './logos/ellipse55.jpg'
+import ellipse56 from './logos/ellipse56.jpg'
+import ellipse57 from './logos/ellipse57.jpg'
 
 const ellipse = [
-  '/ellipse54.jpg',
-  '/ellipse55.jpg',
-  '/ellipse56.jpg',
-  '/ellipse57.jpg',
+  ellipse54,
+  ellipse55,
+  ellipse56,
+  ellipse57,
 ]
 
 const Footer = () => {
@@ -13,7 +18,7 @@ const Footer = () => {
       <div className='bg-[#161C28] text-white'>
         <div className='max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row gap-9'>
           <div className='flex-1 bg-[#1E2433] rounded-2xl p-6 shadow-lg'>
-            <h2 className='text-6xl font-semibold mb-4'>
+            <h2 className='text-4xl md:text-6xl font-semibold mb-4'>
               People are Saying About DoWhith
             </h2>
 
@@ -41,13 +46,6 @@ const Footer = () => {
                   />
                 ))}
                 <div className='w-9 h-9 mt-2 rounded-full object-cover border border-gray-300 shadow-sm flex-shrink-0 flex items-center justify-center bg-gray-700 text-sm font-medium hover:bg-gray-600 transition cursor-pointer'>
-                  {/* <Iconly
-                    name='Tick' // or try "Check"
-                    set='bold'
-                    primaryColor='#54BD95'
-                    size='medium'
-                  /> */}
-                  {/* ▶️ */}
                   <Play set='light' primaryColor='#000000ff' size='medium' />
                 </div>
               </div>
@@ -55,7 +53,9 @@ const Footer = () => {
           </div>
           {/*  */}
           <form className='flex-1 bg-[#1E2433] rounded-2xl p-6 shadow-lg'>
-            <div className='w-[72.06px] h-[86px] bg-[#54BD95] rounded-2xl mx-auto'></div>
+            <div className='flex justify-center'>
+              <img src={Vector} alt='' className='h-[75px] w-[86px]' />
+            </div>
             <h2 className='text-xl font-light mb-4 text-white text-center'>
               Get Started
             </h2>
@@ -88,7 +88,9 @@ const Footer = () => {
               Request Demo
             </button>
             <p className='text-center text-sm text-right mt-2 text-gray-500 hover:text-white'>
-              <a href='#' className="hover:underline">or Start Free Trial</a>
+              <a href='#' className='hover:underline'>
+                or Start Free Trial
+              </a>
             </p>
           </form>
         </div>
@@ -108,13 +110,6 @@ const Footer = () => {
                 className='flex-1 p-2 rounded-md bg-white text-black border border-gray-300       focus:outline-none focus:border-[#54BD95]'
               />
               <div className='w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-sm font-medium cursor-pointer hover:bg-gray-600 transition cursor-pointer'>
-                {/* <Iconly
-                  name='Play'
-                  set='light'
-                  primaryColor='#000102ff'
-                  size='medium'
-                /> */}
-                {/* ▶️ */}
                 <Play set='light' primaryColor='#000000ff' size='medium' />
               </div>
             </div>
@@ -132,16 +127,24 @@ const Footer = () => {
               <h4 className='text-white font-semibold mb-2'>Support</h4>
               <ul className='space-y-1'>
                 <li>
-                  <a href='#' className="hover:underline">Help centre</a>
+                  <a href='#' className='hover:underline'>
+                    Help centre
+                  </a>
                 </li>
                 <li>
-                  <a href='#' className="hover:underline">Account information</a>
+                  <a href='#' className='hover:underline'>
+                    Account information
+                  </a>
                 </li>
                 <li>
-                  <a href='#' className="hover:underline">About</a>
+                  <a href='#' className='hover:underline'>
+                    About
+                  </a>
                 </li>
                 <li>
-                  <a href='#' className="hover:underline">Contact us</a>
+                  <a href='#' className='hover:underline'>
+                    Contact us
+                  </a>
                 </li>
               </ul>
             </div>
@@ -151,16 +154,24 @@ const Footer = () => {
               </h4>
               <ul className='space-y-1'>
                 <li>
-                  <a href='#' className="hover:underline">Talk to support</a>
+                  <a href='#' className='hover:underline'>
+                    Talk to support
+                  </a>
                 </li>
                 <li>
-                  <a href='#' className="hover:underline">Support docs</a>
+                  <a href='#' className='hover:underline'>
+                    Support docs
+                  </a>
                 </li>
                 <li>
-                  <a href='#' className="hover:underline">System status</a>
+                  <a href='#' className='hover:underline'>
+                    System status
+                  </a>
                 </li>
                 <li>
-                  <a href='#' className="hover:underline">Covid response</a>
+                  <a href='#' className='hover:underline'>
+                    Covid response
+                  </a>
                 </li>
               </ul>
             </div>
@@ -168,16 +179,24 @@ const Footer = () => {
               <h4 className='text-white font-semibold mb-2'>Product</h4>
               <ul className='space-y-1'>
                 <li>
-                  <a href='#' className="hover:underline">Update</a>
+                  <a href='#' className='hover:underline'>
+                    Update
+                  </a>
                 </li>
                 <li>
-                  <a href='#' className="hover:underline">Security</a>
+                  <a href='#' className='hover:underline'>
+                    Security
+                  </a>
                 </li>
                 <li>
-                  <a href='#' className="hover:underline">Beta test</a>
+                  <a href='#' className='hover:underline'>
+                    Beta test
+                  </a>
                 </li>
                 <li>
-                  <a href='#' className="hover:underline">Pricing product</a>
+                  <a href='#' className='hover:underline'>
+                    Pricing product
+                  </a>
                 </li>
               </ul>
               <div className='flex text-white mt-4 space-x-1'>

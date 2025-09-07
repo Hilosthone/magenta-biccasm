@@ -1,7 +1,9 @@
+import subtract from '../components/logos/Subtract.png'
+
 const plans = [
   {
     name: 'Free',
-    price: '$0',
+    price: '0',
     text: 'Have a go  and test your  superpowers',
     features: [
       '2 Users',
@@ -15,7 +17,7 @@ const plans = [
   {
     name: 'Pro',
     text: 'Experiment the power of infinite possibilities',
-    price: '$8',
+    price: '8',
     btn: 'Save $50 a year',
     features: [
       '4 Users',
@@ -29,7 +31,7 @@ const plans = [
   {
     name: 'Business',
     text: 'Unveil new superpowers and join the Design Leaque',
-    price: '$16',
+    price: '16',
     features: [
       'All the features of pro plan',
       'Account success Manager',
@@ -43,9 +45,9 @@ const plans = [
 
 const PlansSection = () => {
   return (
-    <section className='w-full bg-gray-50 py-20'>
+    <section className='w-full bg-[linear-gradient(to_right,rgba(84,190,150,0.06),rgba(84,190,150,0.14))] py-20'>
       <div className='max-w-7xl mx-auto px-4 text-center'>
-        <h2 className='text-3xl font-bold'>Choose Plans </h2>
+        <h2 className='text-3xl font-bold'>Choose Plans</h2>
         <h2 className='text-3xl font-bold mb-5'>That’s Right For You</h2>
         <p className='text-[#A6A6A6] mb-4'>
           Choose plan that works best for you, feel free to contact us
@@ -60,19 +62,27 @@ const PlansSection = () => {
           </button>
         </div>
 
-        <div className='grid md:grid-cols-3 gap-8'>
+        <div className='grid md:grid-cols-3 gap-8 '>
           {plans.map((plan, index) => (
             <div key={index} className='bg-white rounded-2xl shadow p-6'>
               <h3 className='text-xl font-semibold mb-2'>{plan.name}</h3>
               <p className='text-neutral-400'>{plan.text}</p>
-              <p className='text-2xl font-bold mb-4'>{plan.price}</p>
-              <button className='text-lg rounded bg-green-200 text-white'>
+              <p className='text-2xl font-bold mb-4'>
+                {' '}
+                <sup className='text-gray-500'>$</sup>
+                {plan.price}
+              </p>
+              <button className='text-lg bg-[#6BC2A1] text-white rounded-[10px]'>
                 {plan.btn}
               </button>
               <ul className='text-gray-600 mb-6 space-y-1'>
                 {plan.features.map((feature, idx) => (
-                  <li className='flex items-left' key={idx}>
-                    ✅
+                  <li className='flex items-start gap-2' key={idx}>
+                    <img
+                      src={subtract}
+                      alt='✅'
+                      className='w-[26px] h-[26px] flex-shrink-0'
+                    />
                     {feature}
                   </li>
                 ))}

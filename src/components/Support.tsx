@@ -1,8 +1,32 @@
+const ellipse = [
+  '/ellipse54.jpg',
+  '/ellipse55.jpg',
+  '/ellipse56.jpg',
+  '/ellipse57.jpg',
+]
+
+const RelativeBox = () => (
+  <div className='relative w-full h-64 bg-[#1E2433] rounded-2xl'>
+    {ellipse.map((img, index) => (
+      <img
+        key={index}
+        src={img}
+        alt={`ellipse-${index}`}
+        className={`absolute w-12 h-12 rounded-full border border-gray-300 shadow-sm
+          ${index === 0 ? 'top-2 left-4' : ''}
+          ${index === 1 ? 'top-4 right-4' : ''}
+          ${index === 2 ? 'bottom-4 left-6' : ''}
+          ${index === 3 ? 'bottom-2 right-6' : ''}
+        `}
+      />
+    ))}
+  </div>
+)
+
 function Support() {
   return (
     <section className='w-full bg-white py-20'>
       <div className='max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-12'>
-
         <div className='flex-1 text-center md:text-left space-y-6'>
           <h2 className='text-2xl md:text-6xl font-medium leading-tight'>
             How we support our partner all over the world

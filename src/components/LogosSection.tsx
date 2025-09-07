@@ -13,12 +13,17 @@ const logos = [
 ]
 const LogosSection = () => {
   return (
-    <section className='w-full bg-gray-50 py-10'>
+    <section className='w-full bg-[linear-gradient(to_left,rgba(82,189,170,0.06),rgba(82,189,170,0.14))] py-10'>
       <div className='max-w-7xl mx-auto px-4 text-center'>
         <p className='text-gray-600 mb-4'>More than 25,000 teams use Collabs</p>
         <div className='flex justify-center flex-wrap gap-8'>
           {logos.map((src, index) => (
-            <img key={index} src={src} alt='Logo' className='w-[169px] h-[75px]' />
+            <img
+              key={index}
+              src={src}
+              alt='Logo'
+              className='w-[169px] h-[75px]'
+            />
           ))}
         </div>
       </div>
